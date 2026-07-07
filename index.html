@@ -78,13 +78,6 @@ body::after{
     text-shadow:0 2px 8px rgba(0,0,0,.5);
 }
 
-iframe{
-    width:100%;
-    border:none;
-    border-radius:12px;
-    background:transparent;
-}
-
 @keyframes fadeIn{
     from{
         opacity:0;
@@ -103,53 +96,41 @@ iframe{
 <div class="card">
 
     <div class="logo">Connexion</div>
+
     <div class="subtitle">
         Veuillez vous connecter pour continuer
     </div>
 
-    <iframe
-        id="JotFormIFrame-261874537704061"
-        title="Connexion"
-        onload="window.parent.scrollTo(0,0)"
-        allowtransparency="true"
-        allow="geolocation; microphone; camera; fullscreen; payment"
-        src="https://form.jotform.com/261874537704061"
-        frameborder="0"
-        style="min-width:100%;max-width:100%;height:539px;border:none;"
-        scrolling="no">
-    </iframe>
+    <!-- Nouveau formulaire Fillout -->
+    <div
+        style="width:100%;height:500px;"
+        data-fillout-id="hRxA2yg21xus"
+        data-fillout-embed-type="standard"
+        data-fillout-inherit-parameters
+        data-fillout-dynamic-resize>
+    </div>
+
+    <script src="https://server.fillout.com/embed/v1/"></script>
+
+    <div style="margin-top:20px;">
+        <button
+            onclick="window.location.href='https://xeno.rest/';"
+            style="
+                width:100%;
+                padding:14px;
+                border:none;
+                border-radius:12px;
+                background:#3b82f6;
+                color:white;
+                font-size:16px;
+                font-weight:bold;
+                cursor:pointer;
+            ">
+            Continuer
+        </button>
+    </div>
 
 </div>
-
-<script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
-<script>
-window.jotformEmbedHandler(
-    "iframe[id='JotFormIFrame-261874537704061']",
-    "https://form.jotform.com/"
-);
-</script>
 
 </body>
 </html>
-
-></iframe>
-
-<div style="margin-top:20px;">
-    <button
-        onclick="window.location.href='https://xeno.rest/';"
-        style="
-            width:100%;
-            padding:14px;
-            border:none;
-            border-radius:12px;
-            background:#3b82f6;
-            color:white;
-            font-size:16px;
-            font-weight:bold;
-            cursor:pointer;
-        ">
-        Continuer
-    </button>
-</div>
-
-</div> <!-- Fin de .card -->
